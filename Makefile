@@ -13,9 +13,8 @@ pbgen:
 	git add .
 	git commit -m "pbgen ${date "+%Y-%m-%d %H:%M:%S"}"
 	git push origin master
-# (cd ../finder-frontend/model && \
-# git fetch --all && \
-# git merge origin master)
+	(cd ../finder-frontend/model && \
+	git submodule update --remote)
 
 # 使用方法: 全件指定ができないので、.protoファイルを書き足していく。自動化できたら良い
 # ファイル名を全件取得➡️「各model名.proto」の形式でコマンドを実行させる

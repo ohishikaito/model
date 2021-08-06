@@ -16,6 +16,10 @@ message GetUsersReq {
   string current_user_uid = 1;
 }
 
+message Hoge {
+  string current_user_uid = 1;
+}
+
 message GetUsersRes {
   repeated User users = 1;
 }

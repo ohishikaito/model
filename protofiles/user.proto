@@ -17,7 +17,7 @@ message GetUsersReq {
 }
 
 message Hoge {
-  string current_user_uid = 1;
+  string fuga = 1;
 }
 
 message GetUsersRes {
